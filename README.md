@@ -25,7 +25,7 @@ Obojobo-Docs/
 
 > Note: `./releases/latest` only creates redirects for files in the newest version - it will not create a redirect for any files that only exist in an older version. For example, if `./releases/v3.3.2/example.md` exists but `./releases/v3.3.3/example.md` does not then no redirect will exist in `./releases/latest`.
 
-> The `./releases/latest` directory is updated when the docs are built or on the first run when developing. There are also rake commands to do this (see "Update the latest redirects" below).
+> The `./releases/latest` directory is not required as the latest redirects are created automatically.
 
 # Getting Started
 
@@ -45,9 +45,7 @@ Obojobo-Docs/
 
 The files in the `./releases` directory will auto-update in your browser when they are modified.
 
-Use the version selector drop-down on a documentation page to switch between versions. Note that this selector is only aware of the list of versions in `./releases` and may result in a 404 if the current file does not exist in the newly selected version.
-
-> Note regarding `latest`: The first time the `dev` command is run the `./releases/latest/` directory will be updated. You'll need to re-run this command (or run `bundle exec rake releases:update_latest`) if you need to update the `./releases/latest` directory.
+Use the version selector drop-down on a documentation page to switch between versions. Note that this selector is only aware of the list of versispaons in `./releases` and may result in a 404 if the current file does not exist in the newly selected version.
 
 ## Creating a new version
 
